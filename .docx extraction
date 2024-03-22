@@ -1,0 +1,65 @@
+import requests
+from docx import Document
+
+# URL of the .docx file
+url = 'https://www.cancer.gov/nano/news-events/events/pi2019-meeting-book.docx'
+
+# Send a GET request to the URL
+response = requests.get(url)
+
+# Check if the request was successful (status code 200)
+if response.status_code == 200:
+    # Create a BytesIO object from the response content
+    docx_bytes = response.content
+    
+    # Create a Document object from the .docx bytes
+    doc = Document(io.BytesIO(docx_bytes))
+    
+    # Extract text content from the Document
+    text_content = ""
+    for paragraph in doc.paragraphs:
+        text_content += paragraph.text + "\n"
+    
+    # Print or further process the extracted text content
+    print(text_content)
+else:
+    print("Failed to fetch the file.")
+
+
+
+# 2nd code
+
+  import io
+import zipfile
+import requests
+from bs4 import BeautifulSoup
+
+# URL of the .docx file
+url = 'https://www.cancer.gov/nano/news-events/events/pi2019-meeting-book.docx'
+
+# Send a GET request to the URL
+response = requests.get(url)
+
+# Check if the request was successful (status code 200)
+if response.status_code == 200:
+    # Create a file-like object from the response content
+    fpin = io.BytesIO(response.content)
+    
+    # Create a ZipFile object from the file-like object
+    with zipfile.ZipFile(fpin, 'r') as zfile:
+        # Read the content of the 'word/document.xml' file
+        xml_content = zfile.read('word/document.xml')
+        
+        # Parse the XML content using BeautifulSoup
+        soup = BeautifulSoup(xml_content, 'xml')
+        
+        # Extract text content from XML
+        text_content = soup.get_text()
+        
+        # Print or further process the extracted text content
+        print(text_content)
+else:
+    print("Failed to fetch the file.")
+
+
+  
