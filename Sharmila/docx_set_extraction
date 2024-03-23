@@ -1,0 +1,45 @@
+import requests
+from bs4 import BeautifulSoup
+from docx import Document
+import io
+
+def extract_urls_from_xml(url):
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'xml')  
+        normal_urls = set()
+        pdf_urls = set()
+        docx_urls = set()
+
+        for loc in soup.find_all('loc'):
+            url = loc.text.strip()
+            if url.lower().endswith('.pdf'):
+                pdf_urls.add(url)
+            elif url.lower().endswith('.docx'):
+                docx_urls.add(url)
+            else:
+                normal_urls.add(url)
+
+        return normal_urls, pdf_urls, docx_urls
+    else:
+        print("Failed to fetch the page:", response.status_code)
+        return set(), set(), set()
+
+# Change sitemap URL here
+url = "https://www.cancer.gov/nano/sitemap.xml"
+normal_urls, pdf_urls, docx_urls = extract_urls_from_xml(url)
+
+# Loop over each DOCX URL and fetch data
+for docx_url in docx_urls:
+    response = requests.get(docx_url)
+    if response.status_code == 200:
+        docx_bytes = response.content
+        doc = Document(io.BytesIO(docx_bytes))
+        text_content = ""
+        for paragraph in doc.paragraphs:
+            text_content += paragraph.text + "\n"
+        print("Data scraped from:", docx_url)
+        print(text_content)
+        print()
+    else:
+        print("Failed to fetch the file:", docx_url)
