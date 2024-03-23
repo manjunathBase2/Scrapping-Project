@@ -29,11 +29,11 @@ class CancerGovSpider(scrapy.Spider):
             if 'espanol' not in url and '.pdf' not in url and '.docx' not in url and 'Spanish' not in url and url not in self.visited_urls and title not in self.visited_titles:
                 with open('scraped_data_v2.txt', 'a', encoding='utf-8') as f:
                     if title is not None:
-                        f.write(f"\ntitle: {title}\n")
+                        f.write(f"\nttle: {title}\n")
                         self.visited_titles.add(title)
-                        f.write(f"url: {url}\n")
+                        f.write(f"@: {url}\n")
                         self.visited_urls.add(url)
-                        f.write(f"text: {' '.join(text + dd_texts)}\n")
+                        f.write(f"txt: {' '.join(text + dd_texts)}\n")
 
             sub_pages = response.css('a::attr(href)').getall()
             for sub_page_url in sub_pages:
