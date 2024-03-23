@@ -1,1 +1,1 @@
-Share your work thru this directory
+I took same code as manjunath and extracted scraped_data.txt .I sanitised it and converted to pdf.And install pdf viewwer supporting libraries on vscode also. I uploaded 3 files regarding txt doc and pdf doc and code.
