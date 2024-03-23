@@ -1,0 +1,59 @@
+import requests
+from bs4 import BeautifulSoup
+import requests
+from PyPDF2 import PdfReader
+from io import BytesIO
+
+def extract_urls_from_xml(url):
+    response = requests.get(url)
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'xml')  
+        normal_urls = set()
+        pdf_urls = set()
+        docx_urls = set()
+
+        for loc in soup.find_all('loc'):
+            url = loc.text.strip()
+            if url.lower().endswith('.pdf'):
+                pdf_urls.add(url)
+            elif url.lower().endswith('.docx'):
+                docx_urls.add(url)
+            else:
+                normal_urls.add(url)
+
+        return normal_urls, pdf_urls, docx_urls
+    else:
+        print("Failed to fetch the page:", response.status_code)
+        return set(), set(), set()
+
+#change sitemap url here
+url = "https://www.cancer.gov/nano/sitemap.xml"
+normal_urls, pdf_urls, docx_urls = extract_urls_from_xml(url)
+
+# Function to extract text from PDF
+def extract_text_from_pdf(pdf_urls):
+    extracted_text=[]
+    for pdf_url in pdf_urls:
+        response = requests.get(pdf_url)
+        if response.status_code == 200:
+            pdf_content = response.content
+            pdf_reader = PdfReader(BytesIO(pdf_content))
+            text = ''
+            for page in pdf_reader.pages:
+                text += page.extract_text()
+            extracted_text.append({'url':pdf_url,'text':text})
+        else:
+             print("Failed to download PDF")
+    return extracted_text
+
+pdf_data = extract_text_from_pdf(pdf_urls)
+
+for i, data in enumerate(pdf_data, 1):
+    print(f" URL: {data['url']}")
+    print(f" Text:",data['text'])
+    print() 
+
+
+output_file_path = "pdfoutput.txt"
+with open(output_file_path, "w", encoding="utf-8") as f:
+     f.write(pdf_data)
