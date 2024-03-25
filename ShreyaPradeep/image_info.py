@@ -2,10 +2,6 @@ import requests
 from PIL import Image
 import pytesseract
 from io import BytesIO
-!apt-get install tesseract-ocr
-!apt-get install tesseract-ocr-all
-!pip install pytesseract
-pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
 def image_text(image_url):
     try:
         response = requests.get(image_url)

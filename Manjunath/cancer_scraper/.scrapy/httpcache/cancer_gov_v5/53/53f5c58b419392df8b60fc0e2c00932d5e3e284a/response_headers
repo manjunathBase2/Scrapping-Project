@@ -1,0 +1,13 @@
+Content-Length: 234
+Content-Type: text/html; charset=iso-8859-1
+Location: http://www.cancer.gov/ccg/
+Server: nginx
+X-Age: 236459
+X-Cache-Hits: 11
+X-Content-Type-Options: nosniff
+X-Request-Id: v-d5a8d5f4-e65d-11ee-baa9-abde1f8bc069
+Expires: Sun, 24 Mar 2024 20:50:01 GMT
+Cache-Control: max-age=0, no-cache
+Pragma: no-cache
+Date: Sun, 24 Mar 2024 20:50:01 GMT
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload

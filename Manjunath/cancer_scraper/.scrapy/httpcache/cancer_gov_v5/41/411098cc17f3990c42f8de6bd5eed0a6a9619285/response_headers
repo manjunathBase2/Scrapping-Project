@@ -1,0 +1,21 @@
+Content-Length: 414
+Accept-Ranges: bytes
+Content-Disposition: attachment; filename="cal-1196541.ics"
+Content-Language: en
+Content-Transfer-Encoding: binary
+Content-Type: text/calendar; charset=UTF-8
+Last-Modified: Sun, 24 Mar 2024 20:52:11 GMT
+Pragma: no-cache
+Server: nginx
+X-Age: 0
+X-Ah-Environment: 01live
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Request-Id: v-63097d84-ea20-11ee-b6ae-4722f018f945
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Cache-Control: public, must-revalidate, max-age=0, post-check=0, pre-check=0
+Expires: Sun, 24 Mar 2024 20:52:12 GMT
+Date: Sun, 24 Mar 2024 20:52:12 GMT
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload

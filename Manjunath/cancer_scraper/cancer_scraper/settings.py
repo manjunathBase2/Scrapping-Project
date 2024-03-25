@@ -31,7 +31,7 @@ CONCURRENT_REQUESTS = 32
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+# COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -68,7 +68,7 @@ CONCURRENT_REQUESTS = 32
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
-#AUTOTHROTTLE_ENABLED = True
+# AUTOTHROTTLE_ENABLED = True
 # The initial download delay
 #AUTOTHROTTLE_START_DELAY = 5
 # The maximum download delay to be set in case of high latencies
@@ -81,7 +81,7 @@ CONCURRENT_REQUESTS = 32
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-#HTTPCACHE_ENABLED = True
+# HTTPCACHE_ENABLED = True
 #HTTPCACHE_EXPIRATION_SECS = 0
 #HTTPCACHE_DIR = "httpcache"
 #HTTPCACHE_IGNORE_HTTP_CODES = []

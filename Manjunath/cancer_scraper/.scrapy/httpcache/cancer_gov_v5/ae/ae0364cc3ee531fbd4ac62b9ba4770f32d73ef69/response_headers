@@ -1,0 +1,17 @@
+Content-Language: en
+Content-Type: text/html; charset=UTF-8
+Location: https://www.cancer.gov/publications/dictionaries/cancer-drug?app_module_route=/&app_module_data%5BdrupalConfig%5D%5BappName%5D=drug-dictionary-app&app_module_data%5BdrupalConfig%5D%5BrootId%5D=NCI-dd-app-root&app_module_data%5BdrupalConfig%5D%5BinitFnName%5D=window.DrugDictionaryApp&app_module_data%5BdrupalConfig%5D%5BappCssUri%5D=https%3A//www.cancer.gov/app-modules/drug-dictionary-app/drug-dictionary-app.v1.2.0/static/css/main-legacy.css&app_module_data%5BdrupalConfig%5D%5BappJsUri%5D=https%3A//www.cancer.gov/app-modules/drug-dictionary-app/drug-dictionary-app.v1.2.0/static/js/main.js&app_module_data%5BdrupalConfig%5D%5BremoveHeadElements%5D%5B0%5D=canonical_url&app_module_data%5BdrupalConfig%5D%5BremoveHeadElements%5D%5B1%5D=robots&app_module_data%5BdrupalConfig%5D%5BremoveHeadElements%5D%5B2%5D=title_tag&app_module_data%5BdrupalConfig%5D%5BremoveHeadElements%5D%5B3%5D=alternate&app_module_data%5BdrupalConfig%5D%5BvalidAppPaths%5D%5B0%5D=%5E%5C/search%5C/%5B%5E%5C/%5D%2B%24&app_module_data%5BdrupalConfig%5D%5BvalidAppPaths%5D%5B1%5D=%5E%5C/expand%5C/%5B%5E%5C/%5D%2B%24&app_module_data%5BdrupalConfig%5D%5BvalidAppPaths%5D%5B2%5D=%5E%5C/def%5C/%5B%5E%5C/%5D%2B%24&app_module_data%5BfrontEndConfig%5D%5BanalyticsName%5D=Drug&app_module_data%5BfrontEndConfig%5D%5BanalyticsChannel%5D=%40%40TOKEN%40%40%5Bcgov_tokens%3Acgov-analytics-channel%5D&app_module_data%5BfrontEndConfig%5D%5BanalyticsContentGroup%5D=%40%40TOKEN%40%40%5Bcgov_tokens%3Acgov-analytics-group%5D&app_module_data%5BfrontEndConfig%5D%5BanalyticsPublishedDate%5D=%40%40TOKEN%40%40%5Bnode%3Afield_date_posted%3Adate%3Ashort%5D&app_module_data%5BfrontEndConfig%5D%5BapiEndpoint%5D=%40%40LITERAL%40%40window.CDEConfig.drugDictionaryConfig.apiServer&app_module_data%5BfrontEndConfig%5D%5BsiteName%5D=%40%40TOKEN%40%40%5Bcgov_tokens%3Acgov-trans-org-name%5D&app_module_data%5BfrontEndConfig%5D%5Btitle%5D=%40%40TOKEN%40%40%5Bnode%3Atitle%5D&app_module_data%5BfrontEndConfig%5D%5BsearchBoxTitle%5D=Search%20NCI%27s%20Drug%20Dictionary&app_module_data%5BfrontEndConfig%5D%5BctsDynamicListingPageBase%5D=https%3A//www.cancer.gov/research/participate/clinical-trials/intervention&app_module_data%5BfrontEndConfig%5D%5BnciThesaurusConceptLink%5D=https%3A//ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp%3Fdictionary%3DNCI%2520Thesaurus&app_module_data%5BfrontEndConfig%5D%5BdictionaryIntroText%5D=The%20NCI%20Drug%20Dictionary%20contains%20technical%20definitions%20and%20synonyms%20for%20drugs/agents%20used%20to%20treat%20patients%0Awith%20cancer%20or%20conditions%20related%20to%20cancer.%20Each%20drug%20entry%20includes%20links%20to%20check%20for%20clinical%20trials%20listed%0Ain%20NCI%27s%20List%20of%20Cancer%20Clinical%20Trials.&app_module_id=cgov_js_only_app&CdrID=564399
+Server: nginx
+X-Age: 0
+X-Ah-Environment: 01live
+X-Content-Type-Options: nosniff
+X-Drupal-Cache: MISS
+X-Frame-Options: SAMEORIGIN
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Redirect-Id: 113706
+X-Request-Id: v-7427679e-ea24-11ee-ae07-8f7855b037a2
+Expires: Sun, 24 Mar 2024 21:25:03 GMT
+Cache-Control: max-age=0, no-cache
+Pragma: no-cache
+Date: Sun, 24 Mar 2024 21:25:03 GMT
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload

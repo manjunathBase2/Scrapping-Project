@@ -1,0 +1,23 @@
+Content-Length: 77744
+Accept-Ranges: bytes
+Content-Encoding: gzip
+Content-Language: en
+Content-Type: text/html; charset=UTF-8
+Etag: "1711154849"
+Last-Modified: Sat, 23 Mar 2024 00:47:29 GMT
+Server: nginx
+X-Age: 159735
+X-Ah-Environment: 01live
+X-Cache-Hits: 9
+X-Content-Type-Options: nosniff
+X-Drupal-Cache: MISS
+X-Drupal-Dynamic-Cache: MISS
+X-Frame-Options: SAMEORIGIN
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Request-Id: v-ed223326-e8ae-11ee-9b05-e36bda8686c7
+Expires: Sun, 24 Mar 2024 21:09:46 GMT
+Cache-Control: max-age=0, no-cache
+Pragma: no-cache
+Date: Sun, 24 Mar 2024 21:09:46 GMT
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains ; preload
